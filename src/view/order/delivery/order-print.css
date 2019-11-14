@@ -1,0 +1,299 @@
+.w {
+  width: 990px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.m {
+  margin-bottom: 20px;
+}
+
+.al {
+  text-align: left;
+}
+
+.ar {
+  text-align: right;
+}
+
+.clr {
+  clear: both;
+}
+
+em {
+  font-style: normal;
+}
+
+.m1 {
+  padding: 0 20px 20px;
+  border-style: solid;
+  border-width: 2px 1px 1px;
+  border-color: #aaa #eee #eee;
+}
+
+.m1 .tb1 td {
+  height: 1.1cm;
+  line-height: 1.1cm;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.tb1 .t1 {
+  width: 50%;
+}
+
+.tb1 .t2 {
+  width: 50%;
+  text-align: right;
+}
+
+.tb2 td {
+  height: 0.8cm;
+  line-height: 0.8cm;
+}
+
+.tb2 .t1 {
+  width: 2cm;
+}
+
+.m2 {
+  border: 1px solid #eee;
+}
+
+.tb4 th {
+  background: #f9f9f9;
+  height: 1.1cm;
+  line-height: 1.1cm;
+  font-weight: normal;
+}
+
+.tb4 td {
+  height: 1.8cm;
+  line-height: 1.8cm;
+  border-bottom: 1px solid #f5f5f5;
+  text-align: center
+}
+
+.tb4 td.al {
+  text-align: left
+}
+
+.tb4 td.ar {
+  text-align: right
+}
+
+.tb4 .gap {
+  width: 20px;
+}
+
+.tb4 td.gap {
+  border-color: #fff;
+}
+
+.tb4 .t3,
+.tb4 .t5,
+.tb .t7 {
+  width: 18%;
+}
+
+.tb4 .p-name {
+  text-align: left
+}
+
+.tb4 .num {
+  font-family: verdana
+}
+
+/*.tb4{border-collapse:collapse;border:1px solid #000}*/
+/*.tb4 th, .tb4 td,.d1{border:1px solid #000}*/
+.d1 {
+  padding: 10px
+}
+
+.d2 {
+  text-align: right;
+  padding: 10px 0;
+  font-size: 14px
+}
+
+.logo {
+  padding: 10px
+}
+
+.footer {
+  /*position:absolute;bottom:0;left:0;*/
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-top: 1px solid #ededed;
+  text-align: center;
+}
+
+.v-h {
+  margin: 10px 0;
+  border-top: 2px solid #ededed;
+  text-align: right
+}
+
+.print-btn {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 96px;
+  height: 50px;
+  line-height: 50px;
+  background: #e54346;
+  color: #fff;
+  font-family: 'Microsoft YaHei';
+  font-size: 18px;
+  font-weight: bold;
+  border: 0;
+}
+
+.close-btn {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 96px;
+  height: 50px;
+  margin-left: 10px;
+  line-height: 50px;
+  background: #717be7;
+  color: #000000;
+  font-family: 'Microsoft YaHei';
+  font-size: 18px;
+  font-weight: bold;
+  border: 0;
+}
+
+.m2 {
+  padding-left: 1px
+}
+
+.goods-total {
+  display: inline-block;
+  display: block;
+  padding: 20px
+}
+
+.goods-total:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden
+}
+
+* html .goods-total {
+  height: 1%
+}
+
+*+html .goods-total {
+  min-height: 1%
+}
+
+.goods-total ul {
+  float: right
+}
+
+.goods-total li {
+  display: inline-block;
+  display: block;
+  line-height: 28px
+}
+
+.goods-total li:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden
+}
+
+* html .goods-total li {
+  height: 1%
+}
+
+*+html .goods-total li {
+  min-height: 1%
+}
+
+.goods-total .label {
+  float: left;
+  width: 500px;
+  text-align: right
+}
+
+.goods-total .w-label {
+  width: 420px;
+  float: left;
+  text-align: right;
+  color: #999
+}
+
+.goods-total .wy-label {
+  width: 80px
+}
+
+.goods-total .txt {
+  float: left;
+  width: 130px;
+  text-align: right;
+  font-family: verdana
+}
+
+.goods-total .txt .help-tips {
+  padding-right: 3px
+}
+
+.goods-total .count {
+  font-size: 18px;
+  font-weight: 700
+}
+
+.root61 .goods-list .col-goods {
+  width: 500px
+}
+
+.root61 .goods-list td {
+  padding: 17px 0 20px
+}
+
+.root61 .goods-list td.grap {
+  padding: 0
+}
+
+.root61 .goods-list .p-info {
+  width: 355px
+}
+
+@media screen {
+  #printSection {
+    display: none;
+  }
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #printSection,
+  #printSection * {
+    visibility: visible;
+  }
+
+  #printSection {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .v-h {
+    display: none;
+  }
+}
